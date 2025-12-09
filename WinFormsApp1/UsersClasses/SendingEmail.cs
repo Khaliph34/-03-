@@ -8,7 +8,7 @@ using System.Net.Mail;
 
 namespace WinFormsApp1.UsersClasses
 {
-    internal class SendingEmail
+    public class SendingEmail
     {
         private InfoEmailSending InfoEmailSending { get; set; }
         public SendingEmail(InfoEmailSending infoEmailSending)
@@ -75,6 +75,7 @@ namespace WinFormsApp1.UsersClasses
             {
                 Console.WriteLine(ex.Message);
             }
+         
         }
     }
 }

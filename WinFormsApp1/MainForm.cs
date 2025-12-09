@@ -2,6 +2,15 @@ using static WinFormsApp1.UsersClasses.InfoEmailSending;
 using System.Net;
 using System.Windows.Forms;
 using WinFormsApp1.UsersClasses;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WinFormsApp1
 {
@@ -33,9 +42,9 @@ namespace WinFormsApp1
             //Ввод данных с формы в объекты ранее созданных классов
             string smtp = "smtp.mail.ru";
             //Необходимо ввести свой mail.ru адрес!!! И мвоё ФИО
-            StringPair fromInfo = new StringPair("official.works@inbox.ru, Бахмаева Милана Руслановна");
+            StringPair fromInfo = new StringPair("official.works@inbox.ru", "Бахмаева Милана Руслановна");
             //Необходимо ввести свой пароль который вывел mail.ru !!!
-            string password = "MzPsavulsS2d7GKHZ5As";
+            string password = "af3i9pkq6g0OTbmJqP0e";
 
             StringPair toInfo = new StringPair(textBoxEmail.Text, textBoxName.Text);
             string subject = textBoxSubject.Text;
